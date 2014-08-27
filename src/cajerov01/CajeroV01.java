@@ -7,7 +7,7 @@ public class CajeroV01 {
 		   principal();
 
     }
-
+// comment
     public static void principal() {
         
         JOptionPane.showMessageDialog(null, "BIENVENIDOS AL BANCO LOS "
