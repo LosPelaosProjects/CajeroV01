@@ -7,8 +7,7 @@ public class CajeroV01 {
 		   principal();
 
     }
-    // benja :)
-// comment
+   
     public static void principal() {
         
         JOptionPane.showMessageDialog(null, "BIENVENIDOS AL BANCO LOS "
@@ -59,13 +58,13 @@ public class CajeroV01 {
                             break;
 
                         default:
-                            JOptionPane.showMessageDialog(null, "Debe acceder a una operaci�n");
+                            JOptionPane.showMessageDialog(null, "Debe acceder a una operación");
                             break;
                     }
                     break;
                 case "0987":
 
-                    JOptionPane.showMessageDialog(null, "BIENVENIDO(A) SE�OR(A) ADMISNISTRADOR(A)");
+                    JOptionPane.showMessageDialog(null, "BIENVENIDO(A) SEÑOR(A) ADMISNISTRADOR(A)");
                     int op2 = validardatos("ESTIMADO ADMIN, SELECCIONE UNA OPCI?N: "
                             + "\n" + "(1) Salir" + "\n" + "(2) Apagar", saldo, 1);
                     switch (op2) {
@@ -77,13 +76,13 @@ public class CajeroV01 {
                             comprobar = false;
                             break;
                         default:
-                            JOptionPane.showMessageDialog(null, "Ingrese numero v�lido");
+                            JOptionPane.showMessageDialog(null, "Ingrese numero válido");
                             break;
                     }
                     break;
                 default:
                     c++;
-                    JOptionPane.showMessageDialog(null, "Contrase�a incorrecta");
+                    JOptionPane.showMessageDialog(null, "Contraseña incorrecta");
                     break;
             }
 
@@ -108,11 +107,11 @@ public class CajeroV01 {
                         if (op > 0) {
                             comprobar = true;
                         } else {
-                            JOptionPane.showMessageDialog(null, "Ingrese numero v�lido");
+                            JOptionPane.showMessageDialog(null, "Ingrese numero válido");
                         }
 
                     } catch (NumberFormatException nfe) {
-                        JOptionPane.showMessageDialog(null, "Ingrese numero v�lido");
+                        JOptionPane.showMessageDialog(null, "Ingrese numero válido");
                     }
                 }
                 break;
@@ -203,7 +202,7 @@ public class CajeroV01 {
                     principal();
                     break;
                 default:
-                    JOptionPane.showMessageDialog(null, "Debe acceder a una operaci�n");
+                    JOptionPane.showMessageDialog(null, "Debe acceder a una operación");
             }
         }
         return newsaldo;
@@ -243,7 +242,7 @@ public class CajeroV01 {
                     principal();
                     break;
                 default:
-                    JOptionPane.showMessageDialog(null, "Debes seleccionar la opcion 1 o 2!!");
+                    JOptionPane.showMessageDialog(null, "Debes seleccionar la opcion 1 o 2");
             }
         }
     }
