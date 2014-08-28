@@ -1,5 +1,13 @@
 package javaapplication48;
-//@lospelaosyelheber
+/* Integrantes:
+@Heber Arratia: Unión del código, método usuario y método admin.
+@Benjamin Cornejo: Unión del código y método inicio.
+@Allan Fernandez:  Unión del código, método dato y método contraseña.
+@Alfredo Rojas:  Método preguntar, método CalcularSaldoGiro y método CalcularSaldoDeposito.
+Los métodos por separados no nos presentaron mayor dificultad, el verdadero problema lo encontramos al unir
+cada uno de los métodos lo que nos llevo a plantearnos varias soluciones...
+Las versiones del código se encuentran disponibles en: https://github.com/LosPelaosProjects
+*/
 import javax.swing.JOptionPane;
 
 public class JavaApplication48 {
@@ -8,7 +16,9 @@ public class JavaApplication48 {
         inicio();
     }
     public static void inicio(){
-        
+/* Hasta el momento de la entrega, la posibilidad de ingresar solo 3 veces el password solo
+logramos integrarlo en la V01 disponible en https://github.com/LosPelaosProjects
+        */            
         String password = contraseña();
         switch (password) {
             case "1234":
