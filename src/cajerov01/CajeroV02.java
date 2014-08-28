@@ -19,6 +19,7 @@ public class JavaApplication48 {
 /* Hasta el momento de la entrega, la posibilidad de ingresar solo 3 veces el password solo
 logramos integrarlo en la V01 disponible en https://github.com/LosPelaosProjects
         */            
+        JOptionPane.showMessageDialog(null, "BIENVENIDO AL BANCO LOS PELAOS INC.");
         String password = contraseña();
         switch (password) {
             case "1234":
@@ -36,7 +37,7 @@ logramos integrarlo en la V01 disponible en https://github.com/LosPelaosProjects
         }
     }
       public static String contraseña() {
-          String password = JOptionPane.showInputDialog("BIENVENIDO AL BANCO LOS PELAOS INC." + "\n" + "Ingrese su Contraseña:");
+          String password = JOptionPane.showInputDialog("Ingrese su Contraseña:");
             if (null==password) {//esto hace que si se presiona cancel vuelve al metodo principal  
                 inicio();//Maravilloso no creen :D?
             }
