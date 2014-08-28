@@ -26,7 +26,7 @@ public class JavaApplication48 {
         }
     }
       public static String contraseña() {
-          String password = JOptionPane.showInputDialog("Ingrese su Contraseña");
+          String password = JOptionPane.showInputDialog("BIENVENIDO AL BANCO LOS PELAOS INC." + "\n" + "Ingrese su Contraseña:");
             if (null==password) {//esto hace que si se presiona cancel vuelve al metodo principal  
                 inicio();//Maravilloso no creen :D?
             }
