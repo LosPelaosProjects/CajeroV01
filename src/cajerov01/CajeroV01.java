@@ -10,8 +10,7 @@ public class CajeroV01 {
    
     public static void principal() {
         
-        JOptionPane.showMessageDialog(null, "BIENVENIDOS AL BANCO LOS "
-                + "PELADOS Inc.");
+        JOptionPane.showMessageDialog(null, "BIENVENIDOS AL BANCO LOS PELADOS Inc.");
         String password = contraseña();
         menu(password);
     }
@@ -65,7 +64,7 @@ public class CajeroV01 {
                 case "0987":
 
                     JOptionPane.showMessageDialog(null, "BIENVENIDO(A) SEÑOR(A) ADMISNISTRADOR(A)");
-                    int op2 = validardatos("ESTIMADO ADMIN, SELECCIONE UNA OPCI?N: "
+                    int op2 = validardatos("ESTIMADO ADMIN, SELECCIONE UNA OPCIÓN: "
                             + "\n" + "(1) Salir" + "\n" + "(2) Apagar", saldo, 1);
                     switch (op2) {
                         case 1:
@@ -162,7 +161,7 @@ public class CajeroV01 {
         while (ejecuta) {
             JOptionPane.showMessageDialog(null, "ESTIMADO USUARIO, SELECCIONE UNA "
                     + "OPCION" + "\n" + serie);
-            opc = validardatos("Ingrese monto deseado", saldo, 1);
+            opc = validardatos("Ingrese opción deseada", saldo, 1);
             switch (opc) {
                 case 1:
                     int doc = 200000;
@@ -215,7 +214,7 @@ public class CajeroV01 {
         int newsaldo = 0;
         if (saldo > 0) {
             newsaldo = saldo - opcion;
-            JOptionPane.showMessageDialog(null, "Su nuevo saldo es " + newsaldo);
+            JOptionPane.showMessageDialog(null, "Su nuevo saldo es : $ " + newsaldo);
         } else {
             JOptionPane.showMessageDialog(null, "Sin saldo suficiente ");
         }
@@ -249,5 +248,11 @@ public class CajeroV01 {
             }
         }
     }
+    public static int deposito (int saldo) {
+			String captura = JOptionPane.showInputDialog("Ingrese el monto que desea depositar");
+	        int depositar = Integer.parseInt(captura);
+	        int nuevovalor = saldo+depositar;
+	        return nuevovalor;
+		}
 }
 
