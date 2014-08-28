@@ -34,10 +34,10 @@ public class JavaApplication48 {
     }
       public static void usuario(int saldo){
           
-          int elección = dato("ESTIMADO USUARIO - SELECCIONE UNA OPCION,(1) Girar Dinero,(2) Depositar Dinero,(3)Consultar Saldo,(4) Cerrar Sesión");
+          int elección = dato("ESTIMADO USUARIO - SELECCIONE UNA OPCION,(1) Girar Dinero,(2) Depositar Dinero,(3) Consultar Saldo,(4) Cerrar Sesión");
           switch (elección) {
               case 1:
-                    int segundaelección = dato("Realizar un giro, Montos Disponibles:,1.- $ 200.000,2.- $ 100.000,3.- $ 50.000,4.- $ 25.000,5.- $ 10.000,6.- $ 5.000,7.- Otro Monto,8.- Volver al menu principal,9 .- Cerrar Sesión.");
+                    int segundaelección = dato("Realizar un Giro, Montos Disponibles:,1.- $ 200.000,2.- $ 100.000,3.- $ 50.000,4.- $ 25.000,5.- $ 10.000,6.- $ 5.000,7.- Otro Monto,8.- Volver al Menu Principal,9 .- Cerrar Sesión.");
                     switch (segundaelección) {
                     case 1:
                         int docien = 200000;
@@ -70,7 +70,7 @@ public class JavaApplication48 {
                         preguntar(saldo);
                          break;
                     case 7:
-                        int otro = dato("Ingrese monto deseado");
+                        int otro = dato("Ingrese Monto Deseado");
                         saldo = CalcularSaldoGiro(saldo,otro);
                         preguntar(saldo);
                         break;
@@ -81,13 +81,13 @@ public class JavaApplication48 {
                          inicio();
                          break; 
                      default:
-                        JOptionPane.showMessageDialog(null, "Opción invalida!");
+                        JOptionPane.showMessageDialog(null, "Opción Invalida!");
                          usuario(saldo);
                          break;
                     }
                   break;
               case 2:
-                  int terceraelección = dato("Realizar un deposito,Montos Disponibles:,1.- $ 200.000,2.- $ 100.000,3.- $ 50.000,4.- $ 25.000,5.- $ 10.000,6.- $ 5.000,7.- Otro Monto,8.- Volver al menu principal,9 .- Cerrar Sesión.");
+                  int terceraelección = dato("Realizar un Deposito,Montos Disponibles:,1.- $ 200.000,2.- $ 100.000,3.- $ 50.000,4.- $ 25.000,5.- $ 10.000,6.- $ 5.000,7.- Otro Monto,8.- Volver al Menu Principal,9 .- Cerrar Sesión.");
                     switch (terceraelección) {
                     case 1:
                         int dociens = 200000;
@@ -120,7 +120,7 @@ public class JavaApplication48 {
                         preguntar(saldo);
                          break;
                     case 7:
-                        int otro = dato("Ingrese monto deseado");
+                        int otro = dato("Ingrese Monto Deseado");
                         saldo = CalcularSaldoDeposito(saldo,otro);
                         preguntar(saldo);
                         break;
@@ -131,20 +131,20 @@ public class JavaApplication48 {
                          inicio();
                          break; 
                      default:
-                        JOptionPane.showMessageDialog(null, "Opción invalida!");
+                        JOptionPane.showMessageDialog(null, "Opción Invalida!");
                          usuario(saldo);
                          break;
                     }
                   break;
               case 3:
-                  JOptionPane.showMessageDialog(null, "Tu saldo es: " + MostrarSaldo(saldo));
+                  JOptionPane.showMessageDialog(null, "Tu Saldo es: " + MostrarSaldo(saldo));
                   usuario(saldo);
                   break;
               case 4:
                   inicio();
                   break;
               default:
-                  JOptionPane.showMessageDialog(null, "Opción invalida!");
+                  JOptionPane.showMessageDialog(null, "Opción Invalida!");
                   usuario(saldo);
                   break;
           }
@@ -158,7 +158,7 @@ public class JavaApplication48 {
                case 2:
                    break;
                default:
-                   JOptionPane.showMessageDialog(null, "Opción invalida!");
+                   JOptionPane.showMessageDialog(null, "Opción Invalida!");
                    admin();
                    break;
            }
@@ -180,17 +180,17 @@ public class JavaApplication48 {
                         if (op > 0) {
                             comprobar = true;
                         } else {
-                            JOptionPane.showMessageDialog(null, "Ingrese numero válido");
+                            JOptionPane.showMessageDialog(null, "Ingrese Número Válido");
                         }
 
                     } catch (NumberFormatException nfe) {
-                        JOptionPane.showMessageDialog(null, "Ingrese numero válido");
+                        JOptionPane.showMessageDialog(null, "Ingrese Numero Válido");
                     }
                 }
             return op;    
     }
         public static void preguntar(int saldo){
-            int elección = dato("Desea realizar otra operación?,(1) Si,(2) No");
+            int elección = dato("Desea Realizar Otra Operación?,(1) Si,(2) No");
             switch (elección){
                 case 1:
                     usuario(saldo);
@@ -206,9 +206,9 @@ public class JavaApplication48 {
         int newsaldo = 0;
         if (saldo > 0) {
             newsaldo = saldo - opcion;
-            JOptionPane.showMessageDialog(null, "Su nuevo saldo es " + newsaldo);
+            JOptionPane.showMessageDialog(null, "Su Nuevo saldo es " + newsaldo);
         } else {
-            JOptionPane.showMessageDialog(null, "Sin saldo suficiente ");
+            JOptionPane.showMessageDialog(null, "Sin Saldo Suficiente ");
         }
         return newsaldo;
     }
@@ -216,9 +216,9 @@ public class JavaApplication48 {
         int newsaldo = 0;
         if (saldo > 0) {
             newsaldo = saldo + opcion;
-            JOptionPane.showMessageDialog(null, "Su nuevo saldo es " + newsaldo);
+            JOptionPane.showMessageDialog(null, "Su Nuevo Saldo es " + newsaldo);
         } else {
-            JOptionPane.showMessageDialog(null, "Sin saldo suficiente ");
+            JOptionPane.showMessageDialog(null, "Sin Saldo Suficiente ");
         }
         return newsaldo;
     }
