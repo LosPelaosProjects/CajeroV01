@@ -91,7 +91,10 @@ public class CajeroV01 {
 
     public static String contraseña() {
         String password = JOptionPane.showInputDialog("Ingrese su Contraseña");
-        return password;
+            if (null==password) {//esto hace que si se presiona cancel vuelve al metodo principal  
+                principal();//Maravilloso no creen :D?
+            }
+        return password; 
     }
 
     public static int validardatos(String texto, int saldo, int com) {
